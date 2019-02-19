@@ -1336,6 +1336,7 @@ figure.effect-bubba:hover p {
 	}
 	.convergent{
 		width: 140%; 
+		min-width: 110px;
 		margin-right: 0%; 
 		margin-left: 0%; 
 		height: 120px;
