@@ -436,14 +436,10 @@ textarea.form-control {
 	padding: 0;
 }
 
-
-#particles-js {
-	height: 75vh;
-}
-
 .intro {
 	position: absolute;
-	width: 100%;
+	width: 50%;
+	margin-left: 25%;
 	top: 50%;
 	left: 0;
 	text-align: center;
