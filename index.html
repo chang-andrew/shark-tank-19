@@ -28,7 +28,6 @@
 	<link href="assets/css/style.css" rel="stylesheet" media="screen">
 
 	<!-- google text fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
 	<script src="assets/js/modernizr.custom.js"></script>
 
 </head>
@@ -38,7 +37,7 @@
 	<!-- Home start -->
 		<!-- HOME ID IS WHERE PIC IS -->
 	<section  id="home" class="pfblock-image screen-height">
-		<div id="particles-js">
+		<!-- particles.js container --> <div id="particles-js"></div> <!-- stats - count particles --> <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 			<div class="intro">
 				<h1>Texas Shark Tank</h1>
 				<h2>April 20, 2019</h2>
@@ -639,11 +638,7 @@
 	</script>
 
 	<!-- particles css -->
-	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-	<script>
-	particlesJS.load('particles-js', 'assets/json/particles.json', function() {
-	console.log('callback - particles.js config loaded');});
-	</script>
+	<script src="./assets/js/particle.js"></script>
 
 </body>
 </html>
