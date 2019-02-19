@@ -1259,11 +1259,24 @@ figure.effect-bubba:hover p {
 	justify-content: center;
 }
 
+.convergent{
+	width: 95%; 
+	margin-right: 2.5%; 
+	margin-left: 2.5%; 
+	height: 220px;
+}
+
 @media screen and (max-width: 1300px) {
 	.logos-flex-item {
 		width: 170px;
 		margin-top: 10px;
 		text-align: center;
+	}
+	.convergent{
+		width: 100%; 
+		margin-right: 0%; 
+		margin-left: 0%; 
+		height: 205px;
 	}
 }
 
@@ -1273,6 +1286,60 @@ figure.effect-bubba:hover p {
 		height: 120px;
 		margin-top: 10px;
 		text-align: center;
+	}
+	.convergent{
+		width: 100%; 
+		margin-right: 0%; 
+		margin-left: 0%; 
+		height: 180px;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.logos-flex-item {
+		width: 140px;
+		height: 120px;
+		margin-top: 10px;
+		text-align: center;
+	}
+	.convergent{
+		width: 110%; 
+		margin-right: 0%; 
+		margin-left: 0%; 
+		height: 160px;
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.logos-flex-item {
+		width: 140px;
+		height: 120px;
+		margin-top: 10px;
+		text-align: center;
+	}
+	.convergent{
+		width: 130%; 
+		margin-right: 0%; 
+		margin-left: 0%; 
+		height: 150px;
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.logos-flex-item {
+		width: 140px;
+		height: 120px;
+		margin-top: 10px;
+		text-align: center;
+	}
+	.convergent{
+		width: 140%; 
+		margin-right: 0%; 
+		margin-left: 0%; 
+		height: 120px;
+		font-size: 11px;
 	}
 }
 
