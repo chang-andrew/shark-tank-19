@@ -28,7 +28,15 @@
 </head>
 <body>
 
-
+	<div id="overlay">
+		<div id="usitlogo">		
+			<img src="assets/img/usitblack.jpg" style="width: 250px; height: 150px; margin-left: 1.5%;"><br>
+		</div>
+		<img src="assets/img/loading.gif" style="width: 100px; height: auto; margin-top: -6%;">
+		<div id="usitlogo" style="margin-top: -12%; margin-left: 1.5%;">
+			<p>Please wait while we load your page.	</p>
+		</div>
+	</div>
 	<!-- Home start -->
 		<!-- HOME ID IS WHERE PIC IS -->
 	<section  id="home" class="pfblock-image screen-height">
@@ -688,9 +696,15 @@
 		)
 	</script>
 
-	<!-- particles css -->
-	<script src="./assets/js/particles2.js"></script> 
-	<script src="./assets/js/particle.js"></script>
+<script src="./assets/js/particles2.js"></script> 
+<script src="./assets/js/particle.js"></script>
+<script>
+	$(window).load(function(){
+		// PAGE IS FULLY LOADED  
+		// FADE OUT YOUR OVERLAYING DIV
+		$('#overlay').fadeTo(300, 0);
+	});
+</script>	
 
 
 

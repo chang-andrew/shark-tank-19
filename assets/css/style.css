@@ -1424,3 +1424,27 @@ figure.effect-bubba:hover p {
 		padding: 14px 20px;
 	}
 }
+
+#overlay{
+  position:fixed;
+  z-index:99999;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background:rgb(255, 255, 255);
+	transition: 1.4s 1.4s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#usitlogo{
+	flex: 0 1 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: -2%;
+	font: 500 28px/1.2 'Chivo', sans-serif;
+}
