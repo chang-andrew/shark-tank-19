@@ -1170,7 +1170,7 @@ figure.effect-bubba:hover p {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .collapsible:hover {
-	background-color: #ccc;
+	background-color: rgb(224, 224, 224);
 }
 
 /* Style the collapsible content. Note: hidden by default */
@@ -1237,38 +1237,40 @@ figure.effect-bubba:hover p {
 	display: -webkit-flex;
 	display: flex;
 
+
 	-webkit-flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: space-evenly;
+}
+
+.logo-image {
+	max-height: 100%;
+	max-width: 100%;
 }
 
 .logos-flex-item {
-	padding-top: 15px;
-	padding-bottom: 10px;
-	width: 300px;
+	padding: 2%;
+	width: 200px;
 	height: 150px;
 	margin-top: 10px;
 	text-align: center;
 	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 @media screen and (max-width: 1300px) {
 	.logos-flex-item {
-		width: 200px;
-		height: 150px;
+		width: 170px;
 		margin-top: 10px;
 		text-align: center;
 	}
 }
 
-.logo-image {
-	max-height: 100%;
-	max-width: 100%;
-}
-
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
 	.logos-flex-item {
-		width: 160px;
-		height: 100px;
+		width: 140px;
+		height: 120px;
 		margin-top: 10px;
 		text-align: center;
 	}
@@ -1277,4 +1279,61 @@ figure.effect-bubba:hover p {
 .logo-image {
 	max-height: 100%;
 	max-width: 100%;
+}
+
+
+/**Navtabs
+**/
+
+.navtab-custom{
+	width: 66%;
+	margin-left: 17%;
+}
+.tabcontent-custom{
+	width: 66%;
+	margin-left: 17%;
+}
+
+@media screen and (max-width: 1000px){
+	.navtab-custom{
+		width: 76%;
+		margin-left: 12%;
+	}
+	.tabcontent-custom{
+		width: 76%;
+		margin-left: 12%;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.navtab-custom{
+		width: 84%;
+		margin-left: 8%;
+	}
+	.tabcontent-custom{
+		width: 84%;
+		margin-left: 8%;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.navtab-custom{
+		width: 92%;
+		margin-left: 4%;
+	}
+	.tabcontent-custom{
+		width: 92%;
+		margin-left: 4%;
+	}
+}
+
+@media screen and (max-width: 410px){
+	.navtab-custom{
+		width: 100%;
+		margin-left: 0px;
+	}
+	.tabcontent-custom{
+		width: 100%;
+		margin-left: 0px;
+	}
 }
