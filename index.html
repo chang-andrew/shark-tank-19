@@ -685,8 +685,6 @@
 	<script src="assets/js/collapsible.js"></script>
 	<script src="assets/js/dropdown.js"></script>
 	<script>
-		$(".accordion").accordion();
-
 		$(".hov").hover(
 			function(){
 				$( this ).children(".timeline-flex-colorbar").css("width", "3%");
@@ -702,7 +700,10 @@
 	$(window).load(function(){
 		// PAGE IS FULLY LOADED  
 		// FADE OUT YOUR OVERLAYING DIV
-		$('#overlay').fadeTo(300, 0);
+		$("#overlay").fadeTo(200, 0);
+		setTimeout(function(){
+			$("#overlay").remove();
+		}, 3000)
 	});
 </script>	
 
