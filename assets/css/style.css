@@ -287,7 +287,7 @@ textarea.form-control {
 
 	.button_slide {
 		color: #FFF;
-		background-color: #17A7EE;
+		background-color: #b3c9c9;
 		/* border: 2px solid rgb(0, 77, 204); */
 		border-radius: 0px;
 		padding: 13px 18px;
@@ -296,7 +296,7 @@ textarea.form-control {
 		font-size: 14px;
 		letter-spacing: 1px;
 		cursor: pointer;
-		box-shadow: inset 0 0 0 0 #004DCC;
+		box-shadow: inset 0 0 0 0 #4d7b8f;
 		-webkit-transition: ease-out 0.4s;
 		-moz-transition: ease-out 0.4s;
 		transition: ease-out 0.4s;
@@ -1335,5 +1335,25 @@ figure.effect-bubba:hover p {
 	.tabcontent-custom{
 		width: 100%;
 		margin-left: 0px;
+	}
+}
+
+.slackbutton{
+	width: 180px; 
+	background-color: white; 
+	padding: 14px 20px;
+}
+
+.slackbutton:hover{
+	background-color: rgb(223, 223, 223);
+	-webkit-transition-duration: .7s;
+	transition-duration: .7s;
+}
+
+@media screen and (max-width:430px){
+	.slackbutton{
+		width: 150px; 
+		background-color: white; 
+		padding: 14px 20px;
 	}
 }
