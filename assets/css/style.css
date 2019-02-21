@@ -1411,15 +1411,7 @@ figure.effect-bubba:hover p {
 
 .slackbutton{
 	width: 180px; 
-	padding: 14px 20px;
-	border: solid 1.5px black;
-}
-
-@media screen and (max-width:430px){
-	.slackbutton{
-		width: 150px; 
-		padding: 14px 20px;
-	}
+	height: auto;
 }
 
 #overlay{
