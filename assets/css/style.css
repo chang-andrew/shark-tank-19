@@ -1265,6 +1265,10 @@ figure.effect-bubba:hover p {
 	height: 220px;
 }
 
+.convimg{
+	height: 88%;
+}
+
 @media screen and (max-width: 1300px) {
 	.logos-flex-item {
 		width: 180px;
