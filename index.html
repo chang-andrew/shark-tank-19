@@ -683,16 +683,18 @@
 <script src="./assets/js/particles2.js"></script> 
 <script src="./assets/js/particle.js"></script>
 <script>
-	$(window).load(function(){
-		// PAGE IS FULLY LOADED  
-		// FADE OUT YOUR OVERLAYING DIV
-		$("#overlay").fadeTo(200, 0);
-		setTimeout(function(){
-			$("#overlay").remove();
-		}, 2000)
-	});
-</script>	
-
+	var timeout = 1500;
+	if (window.performance) {
+		if (performance.navigation.type == 1) {
+			timeout = 600;
+		} 
+	}
+	
+	$("#overlay").fadeTo(200, 0);
+	setTimeout(function(){
+		$("#overlay").remove();
+	}, timeout);
+</script>
 
 
 </body>
