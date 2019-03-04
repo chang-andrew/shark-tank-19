@@ -19,6 +19,8 @@
 	<link href="assets/css/timeline.css" rel="stylesheet">
 	<link href="assets/css/schedule.css" rel="stylesheet">
 	<link href="assets/css/particle.css" rel="stylesheet">
+	<link href="assets/css/popup.css" rel="stylesheet">
+
 
 	<!-- Custom styles CSS -->
 	<link href="assets/css/style.css" rel="stylesheet" media="screen">
@@ -29,13 +31,28 @@
 </head>
 <body>
 
-	<div id="overlay">
+	<div id="overlay" class="">
 		<div id="usitlogo">		
 			<img src="assets/img/usitblack.jpg" style="width: 250px; height: 150px; margin-left: 1.5%;"><br>
 		</div>
 		<img src="assets/img/loading.gif" style="width: 100px; height: auto; margin-top: -6%;">
 		<div id="usitlogo" style="margin-top: -12%; margin-left: 1.5%;">
 			<p style="text-align: center;">Please wait while we load your page.	</p>
+		</div>
+	</div>
+	<div id="overlay2">
+		<div id="popupbox">
+			<div style="width: 5%; margin-left: 93%;">
+				<a style="font-size: 25px;" onclick="closePopup()">&times;</a>
+			</div>
+			<div style="width: 90%; margin-left: 5%; margin-top: 5%;">
+				<h2>Are you an Austin Startup?</h2>
+				<p>Are you interested in getting the word out about your startup? For Texas Shark Tank, we are showcasing some of Austin’s best startups by offering all judges and participants swag bags with stuff from Austin's hottest startup.</p>
+				<div style="display: flex; justify-content: space-between; margin-top: 25px; width: 70%; margin-left: 15%;">
+					<button class="btn-default" style="border-radius: 5px; width: 40%;" onclick="closePopup()">I'm just competing.</button>
+					<button class="btn-primary" style="border-radius: 5px; width: 40%" onclick="popupNav()">I'm interested!</button>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- Home start -->
@@ -49,7 +66,7 @@
 				
 
 				<div id="outer">
-  			<a href="" target="_blank"><div class="button_slide slide_down">REGISTER NOW</div></a> </div>
+  			<a href="http://tinyurl.com/TexasSharkTank2019" target="_blank"><div class="button_slide slide_down">REGISTER NOW</div></a> </div>
 
 			</div>
 
@@ -205,13 +222,13 @@
 
 							<div class="pfblock-subtitle">
 								<p>
-									Register your team <a href="tinyurl.com/TexasSharkTank2019" target="_blank">here</a> before April 1st, 2019 at 5PM for a chance to compete in Texas Shark Tank. After applications close, a selected panel of judges and mentors will review the applications and invite the top 25 teams to pitch the day of the event.
+									Register your team <a href="http://tinyurl.com/TexasSharkTank2019" target="_blank">here</a> before April 1st, 2019 at 11:59PM for a chance to compete in Texas Shark Tank. After applications close, a selected panel of judges and mentors will review the applications and invite the top 25 teams to pitch the day of the event.
 								</p>
 								<br>
 								<button class="collapsible">CLICK HERE TO SEE ADDITIONAL RULES</button>
 								<div class="content">
 												<br>
-												In order to be presented at Texas Shark Tank, your idea must meet the following requirements:
+												In order to be presented at Texas Shark Tank, your startup/idea must meet the following requirements:
 												<br>
 												<br>
 												<ul>
@@ -219,10 +236,8 @@
 													<li>Mentors and/or advisors on the startup team can help with preparation of the pitch but may not participate in the pitch itself.</li>
 													<li>The startup must be pre-funding (this means you have not raised dilutive capital from outside investors).</li>
 												</ul>
-										
 								</div>
 								<br>
-								
 							</div>
 						</div>					
 					</div>
@@ -245,7 +260,6 @@
 						<ul class="nav nav-tabs navtab-custom">
 							<li class="active"><a data-toggle="tab" href="#stage1">Stage 1</a></li>
 							<li><a data-toggle="tab" href="#stage2">Stage 2</a></li>
-							<li><a data-toggle="tab" href="#day">Day Of</a></li>
 						</ul>
 						<div class="tab-content tabcontent-custom">
 							<div id="stage1" class="tab-pane fade in active">
@@ -299,9 +313,6 @@
 									</div>
 								</div>
 							</div>
-							<div id="day" class="tab-pane fade">
-								<p>Check back for more details on our day-of schedule!</p>
-							</div>
 						</div>
 					</div>
 						
@@ -345,30 +356,30 @@
 			<div class="row">
 
 				<div class="col-sm-6 col-sm-offset-3">
-
 					<div class="pfblock-header wow fadeInUp">
 						<h2 class="pfblock-title" class="myProjects">Our Sponsors</h2>
 						<div class="pfblock-line"></div>
 						<div class="pfblock-subtitle">
 							Corporate donations enable us to host events like Texas Shark Tank each year. We accept donations of any size that will go directly towards event operations and financing.				
 						</div>
+						<span id="startup"></span>
 					</div>
 				</div>
 
 
 			</div><!-- .row -->
 
-			<br><br>
 
-			<div class="row">
 
+			<div class="row" style="margin-top: 40px;" >
 				<div class="col-sm-6 col-sm-offset-3">
-
 					<div class="pfblock-header wow fadeInUp">
 						<h2 class="pfblock-title" class="myProjects">Calling All Austin Startups</h2>
 						<div class="pfblock-line"></div>
 						<div class="pfblock-subtitle">
-							Are you interested in getting the word out about your startup? For Texas Shark Tank, we want to be able to showcase some of Austin’s best startups by offering all judges and participants swag bags with stuff from YOUR startup. It can anything from discount codes in brochures to samplers of your product. If you would like to be able to show off some of your products or services, email <a href="mailto:president@usiteam.org?Subject=Texas%20Shark%20Tank%20Startup%20Inquiry">president@usiteam.org</a> for more information!
+							Are you interested in getting the word out about your startup? For Texas Shark Tank, we are showcasing some of Austin’s best startups by offering all judges and participants swag bags with stuff from Austin's hottest startups. It can anything from discount codes in brochures to samplers of your product.
+							<br><br>
+							If you would like to show off some of your products or services, fill out <a target="_blank" href="https://utexas.qualtrics.com/jfe/form/SV_5vSHA4MM2bjagTP">this form</a> to get started.
 						</div>
 					</div>
 				</div>
@@ -379,21 +390,20 @@
 			<br><br>
 
 			<div class="row">
-				<div class="col-sm-6 col-sm-offset-3">
+				<div class="col-sm-6 col-sm-offset-3" style="height: 0px;">
 					<div class="pfblock-header wow fadeInUp">
 						<h2 class="pfblock-title">This Year's Partners</h2>
 						<div class="pfblock-line"></div>
-						
-						
 					</div>
-			
 				</div>
 
-				<ul class="logos-flex-container">
+				<ul class="logos-flex-container" style="margin-top: 50px; margin-bottom: 0px;">
 					<li class="logos-flex-item convergent">
-						<img class="logo-image convimg" src="assets/img/convergent.png">
-						<p><a href="http://www.txconvergent.org/">Texas Convergent</a> is UT's 1st and only organization to be formally backed by both UT's Department of Computer Science and the McCombs School of Business, focused on providing students an interdisciplinary approach to entrepreneurship.</p>
+						<img src="assets/img/long-convergent.png">
 					</li>
+					<div style="text-align: center;">
+						<p><a href="http://www.txconvergent.org/">Texas Convergent</a> is UT's 1st and only organization to be formally backed by both UT's Department of Computer Science and the McCombs School of Business, focused on providing students an interdisciplinary approach to entrepreneurship.</p>
+					</div>
 					<li class="logos-flex-item">
 							<img class="logo-image" src="assets/img/blackstone.png">
 					</li>
@@ -598,7 +608,7 @@
 					
 
 					<div id="bottom-button outer">
-						<a href="" target="_blank"><div class="button_slide slide_down">REGISTER NOW</div></a> 
+						<a href="http://tinyurl.com/TexasSharkTank2019" target="_blank"><div class="button_slide slide_down">REGISTER NOW</div></a> 
 					</div>
 					
 				</div>
@@ -666,11 +676,9 @@
 		</div> <!-- .container -->
 		<div class="row">
 				<div class="col-sm-12">
-
-					
-					
-                    <p class="copyright"> © University Securities Investment Team 2018</p>
-
+					<p class="copyright"> © University Securities Investment Team 2018</p>
+					<br>
+					<p>Special thanks to <a target="_blank" href="http://alexismarcou.com/">Alexis Marcou</a> for providing artistic inspiration.</p>
 				</div>
 
 			</div>
@@ -687,7 +695,8 @@
     <!-- Scroll to top end-->
 
 	<!-- Javascript files -->
-
+	<script src="./assets/js/particles2.js"></script> 
+	<script src="./assets/js/particle.js"></script>
 	<script src="assets/js/jquery-1.11.1.min.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
@@ -698,23 +707,38 @@
 	<script src="assets/js/waypoints.min.js"></script>
 	<script src="assets/js/jquery.cbpQTRotator.js"></script>
 	<script src="assets/js/custom.js"></script>
-	<script src="assets/js/main.js"></script>
+	<script src="assets/js/collapsible.js"></script>
 
 
-<script src="./assets/js/particles2.js"></script> 
-<script src="./assets/js/particle.js"></script>
 <script>
+	$.fn.scrollView = function () {
+    return this.each(function () {
+        $('html, body').animate({
+            scrollTop: $(this).offset().top
+        }, 1000);
+    });
+	}
+
 	var timeout = 1500;
 	if (window.performance) {
 		if (performance.navigation.type == 1) {
 			timeout = 600;
 		} 
 	}
-	
-	$("#overlay").fadeTo(200, 0);
 	setTimeout(function(){
 		$("#overlay").remove();
 	}, timeout);
+	setTimeout(function(){
+		$("#overlay2").css("display", "flex");
+	}, timeout+1000);
+
+	function closePopup(){
+		$("#overlay2").remove();
+	}
+	function popupNav(){
+		$("#overlay2").remove();
+		$("#startup").scrollView();
+	}
 </script>
 
 
